@@ -64,15 +64,15 @@ function App() {
         <div className="card">
           <h3>B.Tech in Information Technology</h3>
           <p>A P J Abdul Kalam Technological University, Kerala<br />
-            Government Engineering College Idukki (2020-2024) — 7.87/10 </p>
+            Government Engineering College Idukki (2020-2024) </p>
         </div>
         <div className="card">
           <h3>12th Grade</h3>
-          <p>Kerala Board of Secondary Examinations, EVHSS Neduvathoor (2020) — 94.75%</p>
+          <p>Kerala Board of Secondary Examinations, EVHSS Neduvathoor (2020)</p>
         </div>
         <div className="card">
           <h3>10th Grade</h3>
-          <p>Kerala State Board of Public Examinations, Marthoma Girls High School, Kottarakkara (2018) — 97%</p>
+          <p>Kerala State Board of Public Examinations, Marthoma Girls High School, Kottarakkara (2018) </p>
         </div>
       </div>
     </section>
