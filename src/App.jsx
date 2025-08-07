@@ -5,7 +5,7 @@ function App() {
   return (
     <>
      <nav>
-  <div className="logo">ARCHA <span className="accent"> BIJU</span></div>
+  <div className="logo">A<span className="accent"> B</span></div>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#academics">Academics</a></li>
@@ -24,14 +24,15 @@ function App() {
 </nav>
 
 
+
       <div className="hero">
   <div className="hero-text">
-    <h1>Hello, I’m Archa Biju</h1>
-    <p>
-      A passionate Software Engineer with a vision to build meaningful,
-      high-impact tech solutions. Skilled in full-stack development and driven
-      by curiosity.
-    </p>
+<h1 className="hero-title animate-name">Hello, I’m <span className="highlight name-glow">Archa Biju</span></h1>
+    <h2 className="hero-role text-reveal">Software Engineer | Python Developer | AI Enthusiast| Data Analyst</h2>
+    
+     <p className="hero-desc text-reveal">
+  As a dedicated Software Engineer and Python Developer, I specialize in crafting intelligent systems and scalable solutions. With a deep interest in AI and data analysis, I strive to bridge innovation and impact through technology.
+</p>
   </div>
 
   <div className="hero-photo">
@@ -42,50 +43,38 @@ function App() {
 
       <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I’m Archa Biju, currently pursuing my <b>MTech in Computer Science & Engineering at Amrita Vishwa Vidyapeetham, Coimbatore.</b></p>
-        <p className="summary">
-          <strong>Professional Summary:</strong> I’m passionate about bridging the gap between research and practical application.
-          I love collaborating on projects that create real-world impact and help shape the future of tech.
-        </p>
+          <p>Hi! I’m <strong>Archa Biju</strong>, currently pursuing my <strong>MTech in Computer Science & Engineering at Amrita Vishwa Vidyapeetham, Coimbatore</strong>.</p>
+       <p> I am passionate about bridging the gap between research and practical application. I specialize in full-stack development, AI tools, and meaningful data-driven solutions. I thrive in collaborative environments that focus on real-world impact and innovation.</p>
+        <p>My experience includes internships in data analysis and network engineering, and I’ve developed several impactful projects ranging from IoT systems to stock analysis tools.</p>
       </section>
 
-      <section id="family">
-        <h2>Family</h2>
-        <p><strong>Family:</strong> I’m blessed with a supportive family — my father, my mother, my loving sibling, and our adorable dog, Diana, who’s truly part of the family.</p>
-      </section>
+    
 
-      <section id="Hobbies">
-        <h2>Hobbies</h2>
-        <p><strong>Hobbies:</strong> I enjoy reading, traveling, and exploring new tech tools. When I’m not coding, you’ll probably find me spending time with Diana!</p>
-      </section>
 
       <section id="academics">
-        <h2>Academics</h2>
-        <ul>
-          <li><b>M.Tech in Computer Science and Engineering: Amrita Vishwa Vidyapeetham, Coimbatore (2025-2027)— Pursuing</b></li>
-          <li><b>B.Tech in Information Technology: Government Engineering College Idukki(2020-2024), CGPA-7.87</b></li>
-          <li><b>12th: Kerala Board of Secondary Examinations, EVHSS, Neduvathoor(2020), 94.75%</b></li>
-          <li><b>10th: Kerala State Board of Public Examinations, Marthoma girls high school ,Kottarakkara(2018), 97%</b></li>
-        </ul>
-      </section>
+      <h2>Academics</h2>
+      <div className="projects-grid">
+        <div className="card">
+          <h3>M.Tech in Computer Science and Engineering</h3>
+          <p>Amrita Vishwa Vidyapeetham, Coimbatore (2025-2027) — Pursuing</p>
+        </div>
+        <div className="card">
+          <h3>B.Tech in Information Technology</h3>
+          <p>A P J Abdul Kalam Technological University, Kerala<br />
+            Government Engineering College Idukki (2020-2024) — 7.87/10 </p>
+        </div>
+        <div className="card">
+          <h3>12th Grade</h3>
+          <p>Kerala Board of Secondary Examinations, EVHSS Neduvathoor (2020) — 94.75%</p>
+        </div>
+        <div className="card">
+          <h3>10th Grade</h3>
+          <p>Kerala State Board of Public Examinations, Marthoma Girls High School, Kottarakkara (2018) — 97%</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Data Analyst Certification – OneRoadmap</li>
-          <li>Data Analytics Virtual Experience – Deloitte Forage</li>
-          <li>SQL for Data Science – IBM</li>
-          <li>ASAP Work Readiness Program</li>
-          <li>Introduction to Career Skills in Data Analytics – LinkedIn</li>
-        </ul>
-      </section>
-
-      <section id="achievements">
-        <h2>Achievements & Future Plans</h2>
-        <p><b>Achievements:</b> Successfully mentored juniors in programming, participated in national-level hackathons, and contributed to socially impactful projects.</p>
-        <p><b>Future Plans:</b> To become a leading software architect, contribute to open-source communities, and innovate solutions in AI for healthcare and education.</p>
-      </section>
-
+      
       <section id="projects">
         <h2>Projects</h2>
         <div className="projects-grid">
@@ -108,38 +97,57 @@ function App() {
         </div>
       </section>
 
-      <section id="skills">
-        <h2>Skills & Tech Stack</h2>
-        <p><strong>Languages:</strong> Python, Java, C, SQL, JavaScript</p>
-        <p><strong>Web:</strong> HTML, CSS, React.js</p>
-        <p><strong>Database:</strong> MySQL, MongoDB</p>
-        <p><strong>Tools:</strong> Tableau, Power BI, Excel, Jupyter</p>
-        <p><strong>Soft Skills:</strong> Critical Thinking, Communication, Teamwork</p>
-        <p><strong>Languages Known:</strong> English, Malayalam, Hindi</p>
-      </section>
+       <section className="section skills fade-in-on-scroll" id="skills">
+      <h2 className="section__title">Skills</h2>
+      <div className="skills__grid">
+        <div className="skill-item stagger-item">Python</div>
+        <div className="skill-item stagger-item">C</div>
+        <div className="skill-item stagger-item">Java</div>
+        <div className="skill-item stagger-item">C</div>
+        <div className="skill-item stagger-item">HTML</div>
+        <div className="skill-item stagger-item">CSS</div>
+        <div className="skill-item stagger-item">SQL</div>
+        <div className="skill-item stagger-item">JavaScript</div>
+        <div className="skill-item stagger-item">React</div>
+        <div className="skill-item stagger-item">Node.js</div>
+        <div className="skill-item stagger-item">MongoDB</div>
+        <div className="skill-item stagger-item">Express.js</div>
+        <div className="skill-item stagger-item">MySQL</div>
+        <div className="skill-item stagger-item">Tableau</div>
+        <div className="skill-item stagger-item">Pandas</div>
+        <div className="skill-item stagger-item">Matplotlib</div>
+        <div className="skill-item stagger-item">GitHub</div>
+        <div className="skill-item stagger-item">Microsoft Excel</div>
+      </div>
+    </section>
 
       <section id="internships">
-        <h2>Internships</h2>
-        <div className="internship">
-          <h3>Data Analyst Intern — Unified Mentor</h3>
-          <p><strong>Jan 2024 – Mar 2024 | Remote</strong></p>
+      <h2>Internships</h2>
+      <div className="projects-grid">
+        <div className="card">
+          <h3>Data Analyst Intern</h3>
+          <p><strong>Company:</strong> Unified Mentor</p>
+          <p><strong>Duration:</strong> Jan 2024 – Mar 2024 | Remote</p>
           <ul>
             <li>Cleaned, analyzed, and visualized large datasets using Python, Excel, and Tableau.</li>
-            <li>Created exploratory dashboards and supported predictive model development.</li>
-            <li>Worked closely with mentors to deliver data-driven insights for business decisions.</li>
+            <li>Created dashboards and assisted in building predictive models.</li>
+            <li>Delivered insights to support key business decisions.</li>
           </ul>
         </div>
 
-        <div className="internship">
-          <h3>Cisco Networking Intern — Network Bulls</h3>
-          <p><strong>Aug 2023 – Oct 2023 | Gurgaon, India</strong></p>
+        <div className="card">
+          <h3>Cisco Networking Intern</h3>
+          <p><strong>Company:</strong> Network Bulls</p>
+          <p><strong>Duration:</strong> Aug 2023 – Oct 2023 | Gurgaon, India</p>
           <ul>
-            <li>Configured real-time enterprise-level Cisco network setups, including routers and switches.</li>
-            <li>Implemented firewall rules, VLAN segmentation, and network security measures.</li>
-            <li>Gained hands-on experience troubleshooting and maintaining robust network infrastructures.</li>
+            <li>Configured enterprise-level Cisco routers and switches.</li>
+            <li>Implemented VLANs, firewall rules, and network segmentation.</li>
+            <li>Troubleshot and maintained secure network infrastructure.</li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       <section id="products">
         <h2>Products</h2>
@@ -154,16 +162,44 @@ function App() {
         </div>
       </section>
 
-    <section id="contact">
-  <h2>Contact Info</h2>
+
+      
+
+      <section id="achievements">
+        <h2>Achievements & Future Plans</h2>
+        <p><b>Achievements:</b> Successfully mentored juniors in programming, participated in national-level hackathons, and contributed to socially impactful projects.</p>
+        <p><b>Future Plans:</b> To become a leading software architect, contribute to open-source communities, and innovate solutions in AI for healthcare and education.</p>
+      </section>
+
+    <section id="contact" className="section">
+  <h2 className="section-title">Let's Connect</h2>
   <div className="contact-list">
-    <a href="mailto:archambiju02@gmail.com" className="contact-btn">📧 archambiju02@gmail.com</a>
-    <a href="https://github.com/ArchaBiju" target="_blank" rel="noreferrer" className="contact-btn">🐱 GitHub</a>
-    <a href="https://twitter.com/Archa__Biju" target="_blank" rel="noreferrer" className="contact-btn">🐦 Twitter</a>
-    <a href="https://linkedin.com/in/archa-biju" target="_blank" rel="noreferrer" className="contact-btn">🔗 LinkedIn</a>
-    <p>📞 +91-8848106211</p>
+
+    <a href="mailto:archambiju02@gmail.com" className="contact-btn" target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" style={{ width: '20px', marginRight: '8px' }} />
+      archambiju02@gmail.com
+    </a>
+
+    <a href="https://github.com/ArchaBiju" target="_blank" rel="noopener noreferrer" className="contact-btn">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="GitHub" style={{ width: '20px', marginRight: '8px' }} />
+      GitHub
+    </a>
+
+    <a href="https://twitter.com/Archa__Biju" target="_blank" rel="noopener noreferrer" className="contact-btn">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/twitter.svg" alt="Twitter" style={{ width: '20px', marginRight: '8px' }} />
+      Twitter
+    </a>
+
+    <a href="https://linkedin.com/in/archa-biju" target="_blank" rel="noopener noreferrer" className="contact-btn">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" alt="LinkedIn" style={{ width: '20px', marginRight: '8px' }} />
+      LinkedIn
+    </a>
+
+    <p className="contact-phone">📞 +91-8848106211</p>
   </div>
 </section>
+
+
 
     <footer>
         © 2025 Archa Biju. All rights reserved.
